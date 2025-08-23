@@ -85,6 +85,8 @@ jobs:
       run: |
         sudo apt update
         sudo apt -y upgrade
+        make clean
+        make clobber
         git clone https://gitlab.com/OrangeFox/misc/scripts
         cd scripts
         sudo bash setup/android_build_env.sh
